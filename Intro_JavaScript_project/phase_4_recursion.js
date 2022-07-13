@@ -1,17 +1,24 @@
+// function range(start, end) {
+//     if (start > end) {
+//         return [];
+//     }
+//     range(start+1, end).push(start);
+//     // let increment = start + 1;
+//     // if (increment <= end) range(increment, end)
+// }
+
 function range(start, end) {
-    let ansArr = [];
-    if (start > end) {
-        return ansArr;
+    if (start === end) {
+      return [];
     }
-    
-    ansArr.push(start);
-    range(start+1, end);
-    // let increment = start + 1;
-    // if (increment <= end) range(increment, end)
-}
+  
+    let ans = range(start, end - 1);
+    ans.push(end - 1);
+    return ans;
+  }
 
 
-// console.log(range(1, 5) )
+console.log(range(1, 5) )
 
 // function range(start, end) {
 //     console.log(start);
