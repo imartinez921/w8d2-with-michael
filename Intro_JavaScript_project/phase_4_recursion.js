@@ -1,6 +1,6 @@
 function range(start, end) {
     let ansArr = [];
-    if (start === end) {
+    if (start > end) {
         return ansArr;
     }
     
@@ -10,7 +10,7 @@ function range(start, end) {
     // if (increment <= end) range(increment, end)
 }
 
-z
+
 // console.log(range(1, 5) )
 
 // function range(start, end) {
